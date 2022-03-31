@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "n7system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,11 +49,14 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
   "devDependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.3.0",
     "@types/react-calendar": "^3.4.5"
+  },
+  "author": {
+    "email": "mr.coul@inbox.ru",
+    "name": "mr.coul"
   }
 }
