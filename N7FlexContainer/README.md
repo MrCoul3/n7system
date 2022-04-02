@@ -1,8 +1,11 @@
-N7FlexContainer component v0.0.1;
+# N7FlexContainer component v0.0.1;
 
-homepage: https://www.npmjs.com/package/n7-flexcontainer;
+> homepage: https://www.npmjs.com/package/n7-flexcontainer;
 
-install: npm i n7-flexcontainer;
+## install
+```bash
+npm i n7-flexcontainer
+```
 
 # TSDX React User Guide
 
