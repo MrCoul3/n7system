@@ -1,1 +1,2 @@
-# n7system
+# N7System #
+## Frontend developer's assistant ##
