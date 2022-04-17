@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 import { AppContainer } from "./components/containers/AppContainer";
-
-const App = () => <AppContainer />;
+import './index.css';
+const App: FC = () => <AppContainer />;
 
 export default App;
