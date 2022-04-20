@@ -1,6 +1,6 @@
 import MainPage from "../pages/MainPage";
-import Login from "../pages/Login";
 import React from "react";
+import InfiniteScroll from "../pages/InfiniteScroll";
 
 export interface IRoute {
     path: string;
@@ -9,12 +9,12 @@ export interface IRoute {
 }
 export enum RouteNames {
     MAIN = '/',
-    LOGIN = '/login',
+    INFINITE_SCROLL = '/infinite-scroll',
 }
 
 export const routes: IRoute[] = [
     {path: RouteNames.MAIN, exact: true,  component: MainPage},
-    {path: RouteNames.LOGIN, component: Login},
+    {path: RouteNames.INFINITE_SCROLL, component: InfiniteScroll},
 ];
 export const publicRoutes: IRoute[] = [];
 export const privateRoutes: IRoute[] = [];

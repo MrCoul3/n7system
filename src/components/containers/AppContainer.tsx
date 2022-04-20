@@ -1,13 +1,16 @@
-import { observer } from "mobx-react";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter, useHistory} from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "../../store";
 import AppRouter from "../AppRouter";
 import {Breadcrumb, Layout} from "antd";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
-export const AppContainer = observer(() => {
+export const AppContainer = () => {
+
+    const router = useHistory();
+    console.log(router.location.pathname)
+
   return (
     <Provider store={store}>
       <BrowserRouter>
@@ -35,4 +38,4 @@ export const AppContainer = observer(() => {
       </BrowserRouter>
     </Provider>
   );
-});
+};

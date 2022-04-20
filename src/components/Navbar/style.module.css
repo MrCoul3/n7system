@@ -1,0 +1,15 @@
+.logo {
+    color: cadetblue;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+.logo:hover {
+    color: #6cc9cc;
+}
+
+.navbar {
+    padding: 0 20px;
+}
+.n7 {
+    color: #fff;
+}
