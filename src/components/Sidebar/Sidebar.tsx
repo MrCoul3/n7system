@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Layout, Menu } from "antd";
 import { useHistory } from "react-router-dom";
 import {RouteNames} from "../../routes";
@@ -6,7 +6,7 @@ import {RouteNames} from "../../routes";
 const Sidebar = () => {
   const { SubMenu } = Menu;
   const router = useHistory();
-    console.log(router.location.pathname)
+
   return (
     <Layout.Sider  className="site-layout-background" width={200}>
       <Menu
@@ -17,7 +17,7 @@ const Sidebar = () => {
         style={{ height: "100%" }}
       >
         <SubMenu  key="sub1" title="Components">
-            <Menu.Item key="1" onClick={() => router.push(RouteNames.INFINITE_SCROLL)} >InfiniteScroll</Menu.Item>
+            <Menu.Item className={'InfiniteScroll'} key="1" onClick={() => router.push(RouteNames.INFINITE_SCROLL)} >InfiniteScroll</Menu.Item>
         </SubMenu  >
       </Menu>
     </Layout.Sider>
